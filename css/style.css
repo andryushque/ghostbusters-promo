@@ -1,0 +1,80 @@
+body {
+  background-color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+/*=== Header ===*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.logo {
+  padding: 0 34px;
+}
+
+.line {
+  height: 100%;
+  width: 1px;
+  background-color: #D4D4D4;
+}
+
+.search-input {
+  background-image: url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  border: none;
+  outline: none;
+  padding-left: 38px;
+  margin-left: 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #A5A5A5;
+}
+
+.navigation {
+  margin-right: 44px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  margin-right: 18px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+}
+
+.button-group {
+  height: 100%;
+}
+
+.button {
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.sign-up {
+  padding: 0 34px;
+  border-left: 1px solid #D4D4D4;
+  background-color: #fff;
+  color: #5671F6;
+}
+
+.login {
+  padding: 0 50px;
+  background-color: #5671F6;
+  color: #fff;
+}
