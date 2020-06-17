@@ -1,1 +1,1 @@
-## "Ghostbusters: Afterlife" promo site
+## "Ghostbusters: Afterlife" Promotional website
