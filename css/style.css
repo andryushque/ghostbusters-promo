@@ -228,3 +228,67 @@ body {
 .rating-text-value {
   font-weight: bold;
 }
+
+
+/*=== Cast ===*/
+
+.cast {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  margin-right: 30px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #A5A5A5;
+}
+
+.section-title.active {
+  font-weight: 900;
+  color: #363636;
+}
+
+.tabs-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 35px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-text .name {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #5671F6;
+}
+
+.card-text .en-name {
+  font-weight: normal;
+  color: #A5A5A5;
+}
