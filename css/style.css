@@ -308,3 +308,43 @@ body {
   font-weight: normal;
   color: #a5a5a5;
 }
+
+/*=== News ===*/
+
+.news {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: #f3f3f3;
+}
+
+.section-news-title {
+  margin-bottom: 65px;
+  font-weight: 900;
+  color: #000;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-card {
+  flex-basis: 23%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+
+.news-date {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-weight: normal;
+}
+
+.news-title {
+  font-weight: 900;
+}
