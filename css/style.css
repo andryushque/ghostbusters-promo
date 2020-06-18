@@ -66,6 +66,10 @@ body {
   transition: color linear 0.2s;
 }
 
+.navigation-link:last-child {
+  margin-right: 0;
+}
+
 .navigation-link:hover {
   color: #5671f6;
 }
@@ -105,6 +109,38 @@ body {
 
 .login:hover {
   background-color: #5671f6f6;
+}
+
+.mobile-buttons {
+  display: none; /* none | flex */
+  align-items: center;
+}
+
+.m-search-button {
+  padding: 5px;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.m-menu-button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.m-menu-line {
+  display: block;
+  width: 16px;
+  height: 1px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 40px;
+  background-color: #000;
 }
 
 /*=== Film ===*/
@@ -318,6 +354,7 @@ body {
 }
 
 .section-news-title {
+  margin-right: 0;
   margin-bottom: 65px;
   font-weight: 900;
   color: #000;
@@ -347,4 +384,277 @@ body {
 
 .news-title {
   font-weight: 900;
+}
+
+/*=== Media ===*/
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header {
+    height: 90px;
+  }
+
+  .header-logo {
+    padding: 0 20px;
+  }
+
+  .navigation {
+    margin-right: 20px;
+  }
+
+  .search-input {
+    margin-left: 20px;
+  }
+
+  .navigation-link {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .sign-up {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .login {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .card-image {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .search-input {
+    margin-right: auto;
+  }
+
+  .line {
+    margin: 0;
+  }
+
+  .film {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .film-trailer {
+    margin-right: 45px;
+  }
+
+  .film-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .film-subtitle {
+    margin-bottom: 30px;
+  }
+
+  .film-description {
+    margin-bottom: 40px;
+  }
+
+  .film-about {
+    margin-bottom: 40px;
+  }
+
+  .film-info-key {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .cast {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .tabs {
+    margin-bottom: 50px;
+  }
+
+  .card {
+    flex-basis: 50%;
+    margin-bottom: 25px;
+  }
+
+  .card-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .news {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .section-news-title {
+    margin-bottom: 50px;
+  }
+
+  .news-card {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+    height: 75px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .header-logo {
+    padding: 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .button-group {
+    display: none;
+  }
+
+  .mobile-buttons {
+    display: flex;
+  }
+
+  .film {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .film-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .film-text {
+    order: -1;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 85%;
+    min-width: 320px;
+  }
+
+  .film {
+    padding-top: 30px;
+  }
+
+  .film-trailer {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .film-poster {
+    width: 100%;
+  }
+
+  .film-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .film-subtitle {
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .film-text {
+    order: 0;
+    margin-bottom: 0;
+  }
+
+  .film-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .film-info-key {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 0;
+  }
+
+  .left-side {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .cast {
+    padding-top: 75px;
+    padding-bottom: 55px;
+  }
+
+  .tabs {
+    margin-bottom: 45px;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .news {
+    padding-bottom: 60px;
+  }
+
+  .section-news-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .news-card {
+    flex-basis: 81.25%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    min-width: 300px;
+  }
 }
