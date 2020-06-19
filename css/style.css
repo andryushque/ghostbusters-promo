@@ -30,10 +30,20 @@ body {
 }
 
 .header-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   padding: 0 34px;
 }
 
-.line {
+.header-logo::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
   height: 100%;
   width: 1px;
   background-color: #d4d4d4;
@@ -90,6 +100,7 @@ body {
 
 .button-group {
   display: flex;
+  flex-wrap: nowrap;
   height: 100%;
 }
 
@@ -392,6 +403,7 @@ body {
 }
 
 .news-card {
+  min-height: 150px;
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
@@ -489,10 +501,6 @@ body {
     margin-right: auto;
   }
 
-  .line {
-    margin: 0;
-  }
-
   .film {
     padding-top: 75px;
     padding-bottom: 75px;
@@ -570,7 +578,7 @@ body {
     padding: 0;
   }
 
-  .line {
+  .header-logo::after {
     display: none;
   }
 
