@@ -11,6 +11,10 @@ body {
   color: #363636;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -21,7 +25,6 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 104px;
   border-bottom: 1px solid #d4d4d4;
 }
@@ -34,6 +37,17 @@ body {
   height: 100%;
   width: 1px;
   background-color: #d4d4d4;
+}
+
+.m-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.m-menu-button img {
+  display: none;
 }
 
 .search-input {
@@ -75,6 +89,7 @@ body {
 }
 
 .button-group {
+  display: flex;
   height: 100%;
 }
 
@@ -89,7 +104,7 @@ body {
 
 .sign-up {
   padding: 0 34px;
-  margin-right: -5px;
+  /*   margin-right: -5px; */
   border-left: 1px solid #d4d4d4;
   background-color: #fff;
   color: #5671f6;
@@ -443,9 +458,13 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .container {
-    max-width: 760px;
+    max-width: 720px;
+  }
+
+  .header {
+    height: 75px;
   }
 
   .navigation {
@@ -532,7 +551,7 @@ body {
   }
 
   .header {
-    height: 75px;
+    height: 60px;
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
@@ -545,16 +564,84 @@ body {
     display: none;
   }
 
-  .search-input {
+  .mobile-buttons {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .m-menu {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 340px;
+    height: calc(100% - 60px);
+    background-color: #5671F6;
+  }
+
+  .m-menu.active {
+    display: flex;
+  }
+
+  .m-menu-button.active {
+    width: 26px;
+    transition: all 1s;
+  }
+
+  .m-menu-button.active img {
+    display: block;
+    height: 19px;
+    width: auto;
+  }
+
+  .m-menu-button.active span {
+    display: none;
+  }
+
+  .search-input {
+    width: 260px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    background-image: none;
+    text-align: center;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navigation-link {
+    margin-bottom: 18px;
+    margin-right: 0;
+    color: #fff;
+  }
+
+  .navigation-link:last-child {
+    margin-bottom: 0;
   }
 
   .button-group {
-    display: none;
+    flex-direction: column;
+    height: auto;
   }
 
-  .mobile-buttons {
-    display: flex;
+  .sign-up {
+    margin-bottom: 30px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
   }
 
   .film {
