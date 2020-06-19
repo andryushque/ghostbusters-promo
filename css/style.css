@@ -112,7 +112,8 @@ body {
 }
 
 .mobile-buttons {
-  display: none; /* none | flex */
+  display: none;
+  /* none | flex */
   align-items: center;
 }
 
@@ -172,14 +173,22 @@ body {
   justify-content: center;
   padding: 25px 0;
   background-color: #fff;
+  color: #363636;
   border: 1px solid #d4d4d4;
   border-radius: 0 0 5px 5px;
+  outline: none;
+  text-decoration: none;
   cursor: pointer;
   transition: color ease 0.2s;
 }
 
-.trailer-button:hover {
+.trailer-button:hover:focus:active {
+  outline: none;
   color: #5671f6;
+}
+
+.trailer-button:visited {
+  color: #363636;
 }
 
 .trailer-button-icon {

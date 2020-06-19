@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -55,14 +56,18 @@
               alt="Film poster"
               class="film-poster"
             />
-            <button class="trailer-button">
+            <a
+              data-fancybox
+              href="https://www.youtube.com/watch?v=o705uydkgew"
+              class="trailer-button"
+            >
               <img
                 src="img/play.svg"
                 alt="Play icon"
                 class="trailer-button-icon"
               />
               <span class="trailer-button-text">Посмотреть трейлер</span>
-            </button>
+            </a>
           </div>
           <!-- /.film-trailer -->
           <div class="film-text">
@@ -290,5 +295,9 @@
       <!-- /.container -->
     </section>
     <!-- /.news -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
   </body>
 </html>
