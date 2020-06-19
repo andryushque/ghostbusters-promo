@@ -1,13 +1,24 @@
 $(document).ready(function () {
-  /*=== Mobile menu button ===*/
   const mMenuBtn = $(".m-menu-button");
   const mMenu = $(".m-menu");
   const body = $("body");
+  const tab = $(".tab");
 
+  /*=== Mobile menu button ===*/
   mMenuBtn.on("click", function () {
     mMenu.toggleClass("active");
     mMenuBtn.toggleClass("active");
     body.toggleClass("no-scroll");
+  });
+
+  /*=== Actors/Creators toggle ===*/
+  tab.on("click", function () {
+    tab.removeClass("active");
+    $(this).toggleClass("active");
+
+    let activeTabContent = $(this).attr("data-target");
+    $(".tabs-content").removeClass("visible");
+    $(activeTabContent).toggleClass("visible");
   });
 
   /*=== News slider ===*/
